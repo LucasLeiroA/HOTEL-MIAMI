@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contacto.css">
+    <script defer src="/index.js" ></script>
+    <script src="https://kit.fontawesome.com/cfd08fa7c8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/acdf0a0545.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>      
+            <nav class="nav">
+    
+                <div class="separar">
+                    <a href="/index.html" class="logo nav-link"><img src="/imagenes/logo_large.png" alt=""></a>
+                    
+                    <button class="nav-toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+               
+                <ul class="nav-menu">
+                  <li class="nav-menu-item">
+                    <a href="/index.html" class="nav-menu-link nav-link">Home</a>
+                  </li>
+                  <li class="nav-menu-item">
+                    <a href="/contacto/contacto.html" class="nav-menu-link nav-link">Contacto</a>
+                  </li>
+                  <li class="nav-menu-item">
+                    <a href="/habitaciones/habitaciones.html" class="nav-menu-link nav-link">habitacion</a>
+                  </li>
+                  <li class="nav-menu-item">
+                    <a href="/ubcacion/ubicaion.html" class="nav-menu-link nav-link nav-menu-link_active"
+                      >ubicacion</a
+                    >
+                  </li>
+                  <li class="nav-menu-item">
+                    <a href="/turismo/turismo.html" class="nav-menu-link nav-link">Turismo</a>
+                  </li>
+                  <li class="nav-menu-item">
+                    <a href="/reserva/reserva.html" class="nav-menu-link nav-link">RESERVA</a>
+                  </li>
+                </ul>
+               
+              
+              </nav>
+              
+        </header>
+            <section>
+                <section class="section1">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/imagenes/pileta.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/recepcion.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/frenteHotel.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/fuente.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/pasillo.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/imagenes/habitaciondoble2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </section>
+            </section>
+            <section class="contacto_titulo">
+                <h1>Contacto con Hotel Miami</h1>
+                <p>Complete el formulario y le responderemos a la mayor brebedad posible.Desde ya muchas gracias.</p>
+            </section>
+            <section  class="section3">
+                <!-- cambiar correo de envio -->
+                <form class="formulario" action="https://formsubmit.co/lucasleiroa@gmail.com" method="post">
+                    <label for="nombre">Nombre y Apellido<span>*</span></label><br>
+                    <input type="text" name="nombre" required><br>
+                    <label for="Email">Emai<span>*</span></label><br>
+                    <input type="email" name="email" required><br>
+                    <label for="tel">Teléfono<span>*</span></label><br>
+                    <input type="tel" name="tel" required><br>
+                    <label for="ciudad">Ciudad</label><br>
+                    <input type="text" name="ciudad"><br>
+                    <label for="provincia">Provincia/Estado/Región</label><br>
+                    <input type="text" name="provincia"><br>
+                    <label for="pais">País</label><br>
+                    <input type="text" name="pais"><br>
+                    <label for="mensaje">Mensaje<span>*</span></label><br>
+                    <textarea name="mensaje"  required></textarea><br>
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto/contacto.html">
+                    <!-- cambiar dirreciion de vuelta -->
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="HOTEL MIAMI recibio tu consulta fue realizada con exito.Espere un momento y sera resuelta">
+                    <input type="hidden" name="_subject" value="¡CONSULTA!">
+                    <input class="btn-btn" type="submit" name="enviar" value="Enviar"></input>
+                </form>
+            </section>
+            <section>
+                <div class="pie">
+                    <div class="direction">
+                        <h3>Hotel Miami</h3>
+                            <p>Dirección:<span> Junin 580</span></p>
+                            <p>CP:<span>4000</span></p>
+                            <p>Localidad:<span>San Miguel De Tucumán</span></p>
+                            <p>Provincia:<span>Tucumán</span></p>
+                            <p>País:<span>Argentína</span></p>
+                    
+                    </div>
+                    <div class="contacto">
+                        <div class="contac">
+                           <h3>Contacto en Arg</h3>
+                            <p>Tel/Fax:<span>3815 84-7361</span></p>
+                            <p>Móvil:<span>3814310265</span></p>
+                            <p>Email:<span>Hotelmiamituc@hotmail.com</span></p> 
+                        </div>
+                        <div class="wsp">
+                            <a href="https://api.whatsapp.com/send?phone=5493815847361&text=Hola!%20Buenos Dias!%20" class="float" target="_blank">
+                                <i class="fa fa-whatsapp my-float"></i>
+                             </a>      
+                        </div>
+                </div>
+            </section>
+
+
+    </div>
+</body>
+</html>
